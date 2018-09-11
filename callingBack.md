@@ -168,7 +168,9 @@ function get(url, callback) {
 module.exports.getPlayer = getPlayer;
 ```
 
-(Save that file as `playersClient.js`)
+Save that file as `playersClient.js` and run the example using `node callPlayersClient.js`
+
+
 
 First point of interest is the `getPlayer`-function on line 3. See how it takes two parameters, an `id` and then a callback function. 
 
