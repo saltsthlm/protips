@@ -116,6 +116,8 @@ main('Marcus', function (name) {
 });
 ```
 
+See that `});` at the end there. It's there because the curly brace ends the definition of the function and the paranthesis ends the parameter list to the `main`-function. And then the semicolon which is there for our sins. 
+
 ### Summary
 
 Passing functions as parameters is a very powerful construct and can be abbreviated quite a lot. But that it's short and powerful also makes it a little bit harder to read. 
