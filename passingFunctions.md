@@ -70,6 +70,7 @@ A few things to note:
 
 * `hiSayer = function (name) {` becomes `hiSayer = name =>`
   * If there's more than one parameter you will need parantheis around the parameters (`main = (nameToGreet, fn) =>` for example)
+  * A special case is when there's zero parameters to a function, in which case we also need parentheses ```const currentDate = () => return Date() ```
 * When there's only one statement in a function you don't need curly braces
   * And can bring it up on one line, creating what's known as a one-liner
 
