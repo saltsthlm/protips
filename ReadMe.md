@@ -12,3 +12,4 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Save your fingers - Know Visual Studio Code shortcuts](saveyourfingers-2.md)
 * [Save your fingers - Switch easily between keyboard layouts](switchingBetweenKeyboards.md)
 * [Regular expressions resources](regexpresources.md)
+* [Passing functions as parameters](passingFunctions.md)
