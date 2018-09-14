@@ -81,8 +81,8 @@ console.log('Before asynchronous function call');
 
 setTimeout(arg => {
   console.log('Callback called');
-  console.log(`arg was => ${arg}`), 1500, 'funky'
-});
+  console.log(`arg was => ${arg}`);
+}, 1500, 'funky');
 
 console.log('After asynchronous function call');
 ```
