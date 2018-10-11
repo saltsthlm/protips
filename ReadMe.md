@@ -15,3 +15,4 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Callbacks I - Passing functions as parameters](passingFunctions.md)
 * [Callbacks II - calling back](callingBack.md)
 * [Dependency injection](dependencyInjection.md)
+* [Crafting Readable Code](readableCode.md)
