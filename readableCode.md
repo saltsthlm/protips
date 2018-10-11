@@ -5,7 +5,7 @@ Suppose we are developing a module in some system.
 The module we are developing is using some service to fetch a collection of some sort.
 Then it refines the data according to some business rules. 
 Finally it is publishing this data as an event on some event stream.
-Exactly what these things are or how they are implented is not important. 
+Exactly what these things are or how they are implemented is not important. 
 Let's concentrate on how we write the code in our module.
 
 ## The first draft
@@ -44,7 +44,7 @@ First of all, it is using vars all over. Well, that's easy to refactor, but this
 __It is not readable!__
 
 
-## Breethe!
+## Breathe!
 The biggest problem with this code is that it is very compact, so let us fix that.
 
 ```javascript
@@ -84,8 +84,8 @@ module.exports.publish = publish;
 This is much better. You can actually read and understand this code without suffocating - good.
 However, this code is still not very good.
 There are three comments in this code and none of them is justified.
-The outcommented debug print is obvious, but the other two comments should also be removed immediately.
-They are completely unecessary.
+The out commented debug print is obvious, but the other two comments should also be removed immediately.
+They are completely unnecessary.
 
 ## Clean code
 
@@ -189,7 +189,7 @@ module.exports.publish = publish;
 ```
 
 Now look at this! This is well written code. It is both easy to read and easy to reason about. 
-Also, there are no comments, that will rot and become completely missleading after a few iterations.
+Also, there are no comments, that will rot and become completely misleading after a few iterations.
 
 ## Getting functional
 The code above is well written and there is no need to refactor more.
@@ -232,4 +232,4 @@ module.exports.publish = publish;
 Look! Short and concise, yet readable.
 
 If this last step was an improvement or not is in the eye of the beholder. An experienced programmer would probably say yes. 
-However, it could be a little more ailen to somebody who has just started out.
+However, it could be a little more alien to somebody who has just started out.
