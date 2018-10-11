@@ -101,11 +101,11 @@ function findIds(collection) {
     
     if (!item.role === 'admin' || !item.package === 'premium') {
 
-      ids.push('N/A'); 
+      return 'N/A';
 
     } else { 
 
-      ids.push(item.id);
+      return item.id;
     }
   });
 }
@@ -146,7 +146,7 @@ const service = require('./service');
 const emitter = require('./emitter');
 
 function isAdminAndPremium(item) {
-  return item.role === 'admin' && item.package === 'premiumk';
+  return item.role === 'admin' && item.package === 'premium';
 }
 
 function findIds(collection) {
@@ -154,11 +154,11 @@ function findIds(collection) {
     
     if (isAdminAndPremium(item)) {
 
-      ids.push(item.id);
+      return item.id;
 
     } else { 
 
-      ids.push('N/A'); 
+      return 'N/A';
     }
   });
 }
