@@ -29,7 +29,9 @@ Here's a short, top-of-my-head list of things that we should all be familiar eno
 
 2) Try to not interupt eachother. In the same manner - let the person finish speaking before interupting someone.
 
-As an exercise you can try to have the person navigating standing up and then ask others for help. This is not the preferred way of working but can be a good little exericse to get us into the feeling
+As an exercise you can try to have the person navigating standing up and then ask others for help. This is not the preferred way of working but can be a good little exericse to get us into the feeling.
+
+Another pretty cool way of doing this, that Woody tipped us of is the [Liberating Structures app](http://www.liberatingstructures.com/) which starts you off in conversations on how we are going to work together and might end up in [writing team agreements](https://medium.com/tech-travelstart/an-exercise-for-creating-a-team-working-agreement-8672c0bf862c) to further help you progress. These exercises can be run as retrospectives if you want to.
 
 3) Try to speak on the domain level - not the code level. Try to express the problem we are trying to solve without using code terms, before diving into arrays, maps etc.
 
