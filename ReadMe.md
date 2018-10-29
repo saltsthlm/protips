@@ -17,3 +17,5 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Dependency injection](dependencyInjection.md)
 * [Crafting Readable Code](readableCode.md)
 * [Woody Mob programming tips](woodyMobTips.md)
+* [Classes](classes.md)
+* [Using exports and imports in ES6](exports.md)
