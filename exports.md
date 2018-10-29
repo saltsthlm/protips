@@ -1,6 +1,6 @@
 # Export and import modules in ES6
 
-In EcmaScript 6 there's a couple of new ways of importing and exporting modules that might look a bit different and unusual at first. It's really very simple once you get your eyes used to it. 
+In ECMAScript 6 there's a couple of new ways of importing and exporting modules that might look a bit different and unusual at first. It's really very simple once you get your eyes used to it. 
 
 ### Sidenote - running these examples
 
@@ -68,7 +68,7 @@ class Person {
 export default Person
 ```
 
-In that case we can import and use it like this: 
+In that case, we can import and use it like this: 
 
 ```javascript
 import Person from './coolFuncs';
@@ -121,9 +121,9 @@ That first part, outside the curly braces, is the default import that might or m
 
 ## Summary - a React example
 
-This type of exporting and importing happens a lot in modern JavaScript / EcmaScript 6. I hope you now understand what is going on better. 
+This type of exporting and importing happens a lot in modern JavaScript / ECMAScript 6. I hope you now understand what is going on better. 
 
-As a final repetition - let's review some React code, that makes use of these features. Here's a fresh  `App.js` , created with `create-react-app`. I'm only including some parts of it, since just a few lines are interesting for this repetition:
+As a final repetition - let's review some React code, that makes use of these features. Here's a fresh  `App.js`, created with `create-react-app`. I'm only including some parts of it since just a few lines are interesting for this repetition:
 
 ```javascript
 import React, { Component } from 'react';
@@ -140,7 +140,7 @@ export default App;
 ```
 
 * On line 1 we are importing `React` and then something called `Component`
-  * `React` is outside the curly and hence a import of a `export default` the `react` package is exporting. 
+  * `React` is outside the curly and hence an import of an `export default` the `react` package is exporting. 
     * We could have called it anything, but chose the name `React`, but `Mmmmmreact` would work just as good, as long as we are using that name to refer to the default exported functionality. 
   * We are also importing `Component` that is a named export from the `react` package
     * This has to be called `Component` and `Compontent` will fail miserably, since the `react` package doesn't expose anything called `Compontent`
