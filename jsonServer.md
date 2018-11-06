@@ -94,6 +94,24 @@ Json-server is clever enough to understand this and insert a reference id when y
 
 Let's restart our server like so `npx json-server --watch db.json --routes routes.json --port 8080`
 
+#### Starting as node module
+
+If you start your json-server as a node module instead, you can add custom routing by using the rewrite middleware that comes bundled with json-server.
+```javascript
+// server.js
+const jsonServer = require('json-server')
+const server = jsonServer.create()
+const router = jsonServer.router('db.json')
+const middlewares = jsonServer.defaults()
+
+server.use(middlewares)
+server.use(router)
+server.use(jsonServer.rewrite({"/carts/:cartId/items/:itemId": "/items/:itemId"}));
+server.listen(3000, () => {
+  console.log('JSON Server is running')
+})
+```
+
 ### Add Products (Items) to the Cart
 
 To add a couple of items to the cart, the most basic example would be two POST requests like so
