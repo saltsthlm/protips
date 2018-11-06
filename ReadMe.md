@@ -19,4 +19,4 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Woody Mob programming tips](woodyMobTips.md)
 * [Classes](classes.md)
 * [Using exports and imports in ES6](exports.md)
-* [Mock API with JsonServer](jsonServer.md)
+* [Nested mock API with JsonServer](jsonServer.md)
