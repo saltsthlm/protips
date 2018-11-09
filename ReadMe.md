@@ -20,3 +20,4 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Classes](classes.md)
 * [Using exports and imports in ES6](exports.md)
 * [Nested mock API with JsonServer](jsonServer.md)
+* [Copy and pasting in the terminal - a fast way of copying code](copyPasteTerminal.md)
