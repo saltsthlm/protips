@@ -1,4 +1,4 @@
-# Dotfiles on your computers
+# Dotfiles on our computers
 
 Yes! Finally someone (thank you, Charlotte) asked me on how I setup your computers. 
 
