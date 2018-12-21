@@ -47,8 +47,10 @@ Pros with this approach:
 
 In short: the vertical slicing approach will help you to shorten the feedback loop and move more securely and confidently. 
 
-
 ## Summary
+
+![The difference between horizontal and vertical slicing](sliceTheTaskVertically.jpg)
+
 When you get any sized programming task, try to find a way to slice it vertically rather than horizontally. This will help you to move faster, move with confidence and to give you small successes along the way. 
 
 This is actually one of the great benefits of writing tests for your code, that way you slice your coding-tasks up even more granular. 
