@@ -22,3 +22,4 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Nested mock API with JsonServer](jsonServer.md)
 * [Copy and pasting in the terminal - a fast way of copying code](copyPasteTerminal.md)
 * [Dotfiles on our computers](dotfiles.md)
+* [Slice tasks vertically](sliceTheTaskVertically.md)
