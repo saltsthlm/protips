@@ -6,6 +6,7 @@ Over lunch me and Jakob had time to chat with him and we got a few general tips 
 
 1) Try to not interupt the driver. We don't need to interupt someone to correct their typing. The tools, error statements and failing tests should help us. By learning to understand them we will become more proficient programmers.
 
+
 Try as an exercise for a day or so: `do not interupt the driver until they ask for help`. See how it changes the dynamic in the team.
 
 Here's a short, top-of-my-head list of things that we should all be familiar enough with to not be interupted.
