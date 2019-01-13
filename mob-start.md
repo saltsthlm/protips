@@ -29,6 +29,8 @@ A mob have two distinct roles:
 * Ensure that you all see the screen comfortably
 * Take breaks frequently. For example, add a mob member called "Break" in the list of people working.
 
+Finally - read up on the great tips from [Woody´s first visit to </salt>](https://saltsthlm.github.io/protips/woodyMobTips.html)
+
 ## Tools
 
 You don't *need* some extra tooling to work, anything that can help you keep time in an effective way is enough.
