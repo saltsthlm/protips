@@ -20,6 +20,7 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Regular expressions resources](regexpresources.md)
 * [Callbacks I - Passing functions as parameters](passingFunctions.md)
 * [Callbacks II - calling back](callingBack.md)
+* [Using and writing functions that call back](writingDeepFunctions.md)
 * [Dependency injection](dependencyInjection.md)
 * [Classes](classes.md)
 * [Using exports and imports in ES6](exports.md)
