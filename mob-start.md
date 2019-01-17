@@ -41,6 +41,10 @@ That said there are a number of good timers that can be helpful
 * http://mobtimer.zoeetrope.com
 * http://mobster.cc/
 
+And a very special mention to the mob timer created by Sascha Ringström that took the first ever `</salt>`-course
+
+https://saschamz.github.io/mobtimer/
+
 
 
 
