@@ -47,6 +47,11 @@ But we can actually do more. If you only have one line in the function AND that 
 
 ```javascript
 const f2arrow = (p1, p2) => p1 + ' ' + p2;
+
+/* for comparison
+const f2 = function (p1, p2) {
+  return p1 + ' ' + p2;
+}*/
 ```
 
 Pretty smooth, huh?
@@ -67,6 +72,12 @@ Ok - this has only one parameter and we can actually remove the paraenthesis aro
 
 ```javascript
 const f1 = p1 => p1;
+
+/* for comparison
+const f1 = function (p1) {
+  return p1;
+}
+*/
 ```
 
 That's quite a difference!
@@ -118,10 +129,29 @@ And finally, we can remove the curly braces too. We are not returning anything o
 const arr = [1,2,3,4,5];
 
 arr.forEach(el => console.log(el));
+
+/* for comparision
+arr.forEach(function(el) {
+  console.log(el);
+});
+*/
 ```
 
+If the callback took more than one variable (`.forEach` has an overloaded version that does that) it would look like this:
 
+```javascript
+const arr = [1,2,3,4,5];
 
+arr.forEach((el, index) => console.log(el));
+
+/* for comparision
+arr.forEach(function(el, index) {
+  console.log(el);
+});
+*/
+```
+
+Notice that I had to put the paranthesis back in for this version.
 
 ## A video please
 
