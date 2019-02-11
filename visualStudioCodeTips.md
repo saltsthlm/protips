@@ -13,7 +13,7 @@ In an HTML-file you will find both emmet and language basics availablle. Althoug
 As a little demonstration of what Emmet can do type this in a HTML-file and press tab:
 
 ```
-div.marcus>div.lars*10>lorem10
+div.item$*10>div.details*2>lorem10
 ```
 
 In case of CSS, Emmet also doubles as intellisense's autocompletion.
