@@ -16,7 +16,7 @@ const f2 = function (p1, p2) {
 }
 ```
 
-They can now be called like this:
+they can now be called like this:
 
 ```javascript
 console.log(f1('marcus')) // logs 'marcus'
@@ -83,7 +83,7 @@ const f1 = function (p1) {
 That's quite a difference!
 
 ## Functions and arrow functions in callbacks.
-The most important usecase where the abbreviation of functions become handy is when we declare it as callback functions.
+the most important usecase where the abbreviation of functions become handy is when we declare it as callback functions.
 
 Let's try it on the `.forEach` function. `.forEach` is a function on arrays that gets called once per item in the array. It takes a callback that gives you the element.
 
@@ -107,7 +107,7 @@ const arr = [1,2,3,4,5];
 arr.forEach(function(el) { console.log(el); });
 ```
 
-Then remove the `function` keyword and add the arrow
+then remove the `function` keyword and add the arrow
 
 ```javascript
 const arr = [1,2,3,4,5];
@@ -115,7 +115,7 @@ const arr = [1,2,3,4,5];
 arr.forEach((el) => { console.log(el); });
 ```
 
-Then, since this only has one parameter, we can remove the paranthesis.
+then, since this only has one parameter, we can remove the paranthesis.
 
 ```javascript
 const arr = [1,2,3,4,5];

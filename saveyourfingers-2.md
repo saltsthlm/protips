@@ -27,5 +27,3 @@ In the list above:
 * ⌥ - means alt/option-key
 * ⇧ is the Shift-key
 * ⌃ is the control-key
-
-## Using intellisense
