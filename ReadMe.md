@@ -15,6 +15,7 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Save your fingers - Switch easily between keyboard layouts](switchingBetweenKeyboards.md)
 * [Copy and pasting in the terminal - a fast way of copying code](copyPasteTerminal.md)
 * [Dotfiles on our computers](dotfiles.md)
+* [Visual Studio code productivity tips](visualStudioCodeTips.md)
 
 ## JavaScript programming
 * [Regular expressions resources](regexpresources.md)
