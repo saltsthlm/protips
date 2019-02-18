@@ -220,4 +220,4 @@ describe('how to test that somethings throws', () => {
 
 ## Conclusion
 
-I hope that this made testing for errors a bit simpler to graps. 
+I hope that this made testing for errors a bit simpler to grasp. 
