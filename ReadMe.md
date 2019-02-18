@@ -32,3 +32,4 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Fail only one test](failOnlyOneTest.md)
 * [Use a good reporter with mocha](mochareporters.md)
 * [Have one assert per test](oneAssertPerTest.md)
+* [Testing for errors](testingErrors.md)
