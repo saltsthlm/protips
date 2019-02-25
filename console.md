@@ -1,5 +1,4 @@
 # Console can do more than just .log
-
 Using the `console.log` is the goto way to debug your code, that most of us has used many many times.
 
 This post goes through a few of the lesser known tricks that `console` has up its sleeve
