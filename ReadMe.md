@@ -7,6 +7,7 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Woody Mob programming tips](woodyMobTips.md)
 * [Crafting Readable Code](readableCode.md)
 * [Slice tasks vertically](sliceTheTaskVertically.md)
+* [Refactor your code](refactoring.md)
 
 ## Tooling
 * [Easy script navigation with ntl](ntl-post.md)

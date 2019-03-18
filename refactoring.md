@@ -254,7 +254,7 @@ You decide
 
 There's a special case of refactoring in JavaScript that will come in handy. It's just **EXTRACT FUNCTION** but in the case of callbacks we very often start off with the callback **INLINED FUNCTION** 
 
-Consider the following call:
+Consider the following call to fetch:
 
 ```javascript
 const fetch = require('node-fetch');
