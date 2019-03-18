@@ -35,4 +35,4 @@ More on very [useful shortcuts (and a cheatsheet) you can read here](https://cod
 
 * Statusbar hold a lot of information most typically: current language, indent type, indent size, misc. extensions information. That's where it's easiest to select and enforce indentation in editor.
 
-![Statusbar](./statusbar.png)
+![Statusbar](./statusBar.png)
