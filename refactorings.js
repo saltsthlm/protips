@@ -1,13 +1,13 @@
 // Remove dead code
 const hasDeadCode = () => {
-  if (1 > 2) {
+  if (1 < 2) {
     return 'Yes!';
   }
   return 'No';
 }
 
 const noDeadCode = () => {
-  if (1 > 2) {
+  if (1 < 2) {
     return 'Yes!';
   }
 }
@@ -42,15 +42,15 @@ const check = (p) => {
  * @param {first number} a
  * @param {second number} b
  */
-const subtract = (a, b) => a-b;
+const subtract = (a, b) => a - b;
 
 // Extract function
 const isPersonValid = (person) => {
-  if(person.Age < 0) {
+  if (person.Age < 0) {
     return false;
   }
 
-  if(person.Age > 120) {
+  if (person.Age > 120) {
     return false;
   }
 
@@ -58,7 +58,7 @@ const isPersonValid = (person) => {
   // And then 200 more checks
   //
 
-  if(person.Name.length < 0) {
+  if (person.Name.length < 0) {
     return false;
   }
 
@@ -70,21 +70,21 @@ const isAgeTooLow = (person) => person.Age < 0;
 const isAgeTooHigh = (person) => person.Age > 120;
 
 const isPersonValid = (person) => {
-  if(
+  if (
     isAgeTooHigh(person) ||
-    isAgeTooHigh(person) || 
+    isAgeTooHigh(person) ||
     isNameLengthInvalid(person)) {
-      return false;
-    }
-    return true;
+    return false;
   }
+  return true;
+}
 }
 const isNameLengthValid = (person) => person.Name.length > 0;
 const isAgeValid = (person) => person.Age > 0 && person.Age < 120;
 
 const isPersonValid = (person) => {
   return
-    isAgeValid(person) &&
+  isAgeValid(person) &&
     // 200 more checks
     isNameLengthValid(person);
 }
