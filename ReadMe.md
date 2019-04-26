@@ -9,6 +9,7 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Slice tasks vertically](sliceTheTaskVertically.md)
 * [Refactor your code](refactoring.md)
 * [Getting started using the terminal](terminal-start.md)
+* [Fail fast](failFast.md)
 
 ## Tooling
 * [Easy script navigation with ntl](ntl-post.md)
@@ -37,3 +38,4 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Use a good reporter with mocha](mochareporters.md)
 * [Have one assert per test](oneAssertPerTest.md)
 * [Testing for errors](testingErrors.md)
+
