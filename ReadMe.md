@@ -21,17 +21,23 @@ This site lists the protips that we shared with eachother in the Slack-channel d
 * [Visual Studio code productivity tips](visualStudioCodeTips.md)
 
 ## JavaScript programming
-* [Regular expressions resources](regexpresources.md)
-* [Callbacks I - Passing functions as parameters](passingFunctions.md)
-* [Callbacks II - calling back](callingBack.md)
+
+### General programming tips
 * [Arrow functions](arrowFunctions.md)
-* [Using and writing functions that call back](writingDeepFunctions.md)
 * [Dependency injection](dependencyInjection.md)
 * [Classes](classes.md)
 * [Using exports and imports in ES6](exports.md)
 * [Nested mock API with JsonServer](jsonServer.md)
 * [Console is more than just .log](console.md)
 * [Using a file based database - LowDb](lowdb.md)
+* [Regular expressions resources](regexpresources.md)
+
+
+### Callbacks and asynchronous code
+* [Callbacks I - Passing functions as parameters](passingFunctions.md)
+* [Callbacks II - calling back](callingBack.md)
+* [Using and writing functions that call back](writingDeepFunctions.md)
+* [Understanding promises](makingPromises.md)
 
 ## Testing
 * [Fail only one test](failOnlyOneTest.md)
