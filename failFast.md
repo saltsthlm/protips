@@ -118,7 +118,52 @@ On the line after all the if-statements we know:
 
 So here we can safely do things like `cookie.split('auth.status=')` and know that it would work.
 
-(In our case, with only these tests, we can just return true, because that's all that our tests instructed us to do)
+## When to stop?
+In our case, with only these tests, we can just return true, because that's all that our tests instructed us to do.
+
+In other cases we will find new opportunties to *fail fast* as we work with the code, understand more about the problem we are working with. A good way to work with the code is through tests, just as above.
+
+The more we understand of the code - the easier it will be for us to see if we can find opportunities to *fail fast*
+
+## The case against `else`
+A good point in our code to *fail fast*er is when we are doing `else`-statements. Every time I see an `else`-statement I see an opportunity to write better code.
+
+For example - pretty often we are checking for prescense of a value before we can handle it. It might look like this:
+
+```javascript
+if(user !== undefined && user.name !== undefined) {
+  // do work with user.name
+} else {
+  // handle error
+}
+```
+
+or like this - to handle the error first :
+```javascript
+if(user === undefined || user.name === undefined) {
+  // handle error
+} else {
+  // do work with user.name
+}
+```
+
+
+This can be re-written, in an arguable much clearer way, with the *fail fast* approach and without the else-statement:
+
+```javascript
+if(user === undefined || user.name === undefined) {
+  // handle this error and return
+  return 'Need an user';
+}
+
+// Here we can safely use the user.name since we know that it is present if we ever got here
+console.log(user.name)
+```
+
+A final point:
+
+`else` is not always bad but I would at least see if there is an opportunity to *fail fast*
+
 
 # Summary
 Failing fast is a very good strategy when it comes to writing good, easy to read code.
