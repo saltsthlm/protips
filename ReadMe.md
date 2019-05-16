@@ -2,6 +2,8 @@
 
 This site lists the protips that we shared with each other in the Slack-channel during the courses.
 
+The code for the blog posts (where they have code) can be [found here](https://github.com/saltsthlm/protips-code)
+
 ## Working as a programmer, in a mob and elsewhere
 
 * [Mob programming starting points](mob-start.md)
