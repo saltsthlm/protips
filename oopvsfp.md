@@ -156,7 +156,7 @@ const animalList = [
 
 animalList
   .sort((a, b) => animalSorter(a, b))
-  .map(animalPrinter)
+  .map(a => animalPrinter(a))
   .forEach(el => console.log(el))
 ```
 
@@ -174,6 +174,32 @@ animalList
     * `animalPrinter` will return a string for each, meaning that `.map` will return an array of strings
   * We will use this array of string and pass each of those string to `console.log`, using the `.forEach` function 
     * The `.forEach` function that just executes a function per element but doesn't return anything.    
+
+
+
+There's an even tighter way to call the functions above, that you might see. If all there parameters that a function takes are the same as the parameter of the calling function we can just write the name of the function. 
+
+So this part:
+
+```javascript
+animalList
+  .sort((a, b) => animalSorter(a, b))
+  .map(a => animalPrinter(a))
+  .forEach(el => console.log(el))
+```
+
+Could be written like this: 
+
+```javascript
+animalList
+  .sort(animalSorter)
+  .map(animalPrinter)
+  .forEach(el => console.log(el))
+```
+
+
+
+
 
 
 
