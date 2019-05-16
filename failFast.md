@@ -12,11 +12,14 @@ We even have a few tests for this:
 it('should reject undefined cookie', () => {
     assert(!svc.isValidCookie(undefined));
 });
-it('should reject empty string cookie', () => {    assert(!svc.isValidCookie(''));
+it('should reject empty string cookie', () => {    
+    assert(!svc.isValidCookie(''));
 });
-it('should reject cookie without auth.status key', () => {    assert(!svc.isValidCookie('foo=bar'));
+it('should reject cookie without auth.status key', () => {    
+    assert(!svc.isValidCookie('foo=bar'));
 });
-it('should accept cookie with auth.status key', () => {    assert(svc.isValidCookie('foo=bar;auth.status=apa'));
+it('should accept cookie with auth.status key', () => {    
+    assert(svc.isValidCookie('foo=bar;auth.status=apa'));
 });
 ```
 
@@ -170,3 +173,5 @@ Failing fast is a very good strategy when it comes to writing good, easy to read
 The basic idea is that you want to test the arguments that the code is using to see that they are in a state that we can use.
 
 If not - fail fast. Exit the function as early as possible.
+
+This is approach is also called Guard Clauses and has been [described much clearer and faster here](https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html)
