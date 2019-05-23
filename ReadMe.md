@@ -44,6 +44,7 @@ The code for the blog posts (where they have code) can be [found here](https://g
 * [Callbacks II - calling back](callingBack.md)
 * [Using and writing functions that call back](writingDeepFunctions.md)
 * [Understanding promises](makingPromises.md)
+* [Different ways of doing asynchronous code in JavaScript](asyncOptions.md)
 
 ## Testing
 
