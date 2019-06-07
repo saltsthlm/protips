@@ -36,7 +36,8 @@ The code for the blog posts (where they have code) can be [found here](https://g
 * [Console is more than just .log](console.md)
 * [Using a file based database - LowDb](lowdb.md)
 * [Regular expressions resources](regexpresources.md)
-* [OOP and FP  - a comparision](oopvsfp)
+* [OOP and FP  - a comparison](oopvsfp)
+* [Using destructuring](destructoring.md)
 
 ### Callbacks and asynchronous code
 
