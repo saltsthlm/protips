@@ -62,11 +62,12 @@ Now let's make a very simple back-end api by using JSON server
   `"start": "json-server --watch db.json --port 8080"`
 
 * Add a `db.json` file with products (I've used the one below)
+
 * It's done! Test your back end server with `npm start` and then head to http://localhost:8080/proudcts to see your products being returned.
 
 Lovely - we now have a back end server running on http://localhost:8080/.
 
-* Leave that running and start a new terminal window in the `client`-folder
+* Leave that running and start a new terminal window in the `client`-folder (`cd ../client`)
 * Open the `package.json` file and add a `proxy` setting like this:
   * `"proxy": "http://localhost:8080"` - meaning
   > If you don't find resources I try to request, head on over to this location instead and you will find it there
