@@ -54,3 +54,6 @@ The code for the blog posts (where they have code) can be [found here](https://g
 * [Have one assert per test](oneAssertPerTest)
 * [Testing for errors](testingErrors)
 
+## React programming
+
+* [Using the proxy setting for React development server](ReactDevServerProxy)
