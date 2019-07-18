@@ -11,7 +11,17 @@ I'll let the discoverer of mob programming, Woody Zuill, introduce the idea:
 
 Or in other words: a group of people programming together with one keyboard.
 
-For an idea to go into the computer it needs to go through someone elses hands. Therefor we rotate positions in the mob very frequently, never longer than 8-10 minutes per position.
+For an idea to go into the computer it needs to go through someone elses hands. Therefor we rotate positions in the mob very frequently, preferably not longer than 8-10 minutes per position.
+
+Mob programming leads to many good things:
+
+* It's easier to keep focus, since we are rotating more often and when we are working we can, naturally, only doing one thing
+* Everyone in the mob knows the code equally well
+* The code is better since we get everyone's input directly.
+* We can onboard new people into the mob very easily - by just pulling up a chair
+* We are resilient for people being sick - the mob functions well even though someone is out for awhile
+* Learning and sharing is quick within the small group.
+* It's fun!
 
 ## Roles in a mob
 A mob have two distinct roles:
