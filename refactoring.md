@@ -4,8 +4,6 @@ A key programmer skill is to make our code easier to read and understand. In fac
 
 — Robert C. Martin (Uncle Bob Martin), [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is)
 
-
-
 >  By continuously improving the design of code, we make it easier and easier to work with. This is in sharp contrast to what typically happens: little refactoring and a great deal of attention paid to expediently add new features. If you get into the hygienic habit of refactoring continuously, you'll find that it is easier to extend and maintain code.
 
 — Joshua Kerievsky, [Refactoring to Pattern](https://en.wikipedia.org/wiki/Code_refactoring#cite_note-kerievsky-1)
