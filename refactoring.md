@@ -1,3 +1,5 @@
+# Refactoring
+
 A key programmer skill is to make our code easier to read and understand. In fact this more important than to make the code fast, terse and easy for the computer to interpret. Or easy to write.
 
 > “Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...[Therefore,] making it easy to read makes it easier to write.”
