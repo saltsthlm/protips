@@ -43,8 +43,6 @@ That second `return` will never be reached. 1 is always smaller than 2.
 
 No need to leave that around. Let's remove it.
 
-
-
 ```javascript
 const noDeadCode = () => {
   if (1 < 2) {
@@ -63,7 +61,7 @@ const noDeadCodeSimple = () => 'Yes!';
 
 ### Rename
 
-Another **very** simple and powerful refactoring is to simply give stuff better names.
+Another simple and powerful refactoring is to simply give stuff better names.
 
 Check this code out:
 
@@ -219,7 +217,7 @@ Now, even if the checks are plentiful, they are easy to follow and read. Thank y
 
 ### Inline function
 
-Inlining a function is the opposite of the **EXTRACT** refactoring; we take the code from a function and just put it in our code.
+Inlining a function is the opposite of the extract function refactoring; we take the code from a function and just put it in our code.
 
 For example, consider the following silly example:
 
@@ -247,7 +245,7 @@ Now we come to the case where we need to reason and use our brain. There are par
 
 On the one side, this is so easy that it's not really hard to read. On the other hand, extracting the function would make that part of the code easier to test.
 
-You decide
+You decide...
 
 ### Extracting callbacks
 
@@ -286,7 +284,7 @@ const createPersonFromUser = user => {
 }
 ```
 
-In fact, we can extract another function from that… Let's fix that age-calculator too:
+In fact, we can extract another function from that… Let's fix that age-calculator-function too:
 
 ```javascript
 const calculateAge = d => new Date(new Date() - new Date(d)).getFullYear() - 1970;
@@ -331,7 +329,7 @@ By doing that we
    2. We can `createPersonFromUser` by just passing `user` that we create in the test.
    3. etc
 
-Before we dive deeper into the testing part, let's clean this code up some more and show the final part
+Before we dive deeper into the testing part, let's clean this code up some more and show the final state of the code:
 
 ```javascript
 const fetch = require('node-fetch');
@@ -366,6 +364,8 @@ is the same as to write:
 ```javascript
 .then(onlyWomenFromResult)
 ```
+
+This style is known as point-free notation, where we implicitly pass the parameters of the function to it. Makes for some very succinct but still readable code.
 
 ## Refactoring with tests - refactor to test
 
@@ -517,7 +517,7 @@ describe('Filter only women', () => {
 
 Noteworthy in this test is that when I create the fake `data` object, I only need to include the properties that I'm interested in. In this case `gender`. This makes my test less brittle and sensitive to changes.
 
-### Conclusion testing
+## Conclusion testing
 
 We could then continue to **EXTRACT** methods like this and make the parts of the application testable. But that's a bit beyond the scope of this post. I'll leave that as an exercise for you.
 
@@ -525,7 +525,7 @@ But, now, with these tests in place, I could make a lot of changes to my code kn
 
 As an exercise change `calculateAge` to use [moment.js](https://momentjs.com/) instead. Keep running the tests and you would know if your changes still work
 
-## Conclusion refactoring
+# Conclusion refactoring
 
 Oh man, that was a long post. Sorry about that.
 
