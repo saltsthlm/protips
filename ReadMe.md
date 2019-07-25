@@ -24,6 +24,7 @@ The code for the blog posts (where they have code) can be [found here](https://g
 * [Copy and pasting in the terminal - a fast way of copying code](copyPasteTerminal)
 * [Dotfiles on our computers](dotfiles)
 * [Visual Studio code productivity tips](visualStudioCodeTips)
+* [Convention over configuration ... and a word on WebPack](conventionsAndWebpack.md)
 
 ## JavaScript programming
 
