@@ -50,11 +50,11 @@ That said there are a number of good timers that can be helpful
 * https://agility.jahed.io/timer.html
 * http://mobtimer.zoeetrope.com
 * http://mobster.cc/
+* https://mobtimer.com/
 
 And a very special mention to the mob timer created by Sascha Ringström that took the first ever `</salt>`-course
 
 https://saschamz.github.io/mobtimer/
-
 
 
 
