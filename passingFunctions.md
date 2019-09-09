@@ -1,12 +1,16 @@
-## Callbacks part I - functions as parameters
+# Callbacks part I - functions as parameters
 
-One pattern that is used in many places in our code is the concepts of callbacks. They are quite tricky to wrap your head around but once you've untangled them they become second nature. 
+This blog post can also be [viewed as a screencast](https://youtu.be/rhD6_jdZkK8), if you rather hear it than read it.
+
+## Introduction
+
+One pattern that is used in many places in our code is the concepts of callbacks. They are quite tricky to wrap your head around but once you've untangled them they become second nature.
 
 In this little post I wanted to explain a language construct that I've seen led to some confusions: passing functions as parameters.
 
 ## Functions as parameters
 
-JavaScript has a really amazing feature in that you can pass functions as parameters. Like this: 
+JavaScript has a really amazing feature in that you can pass functions as parameters. Like this:
 
 ```javascript
 const hiSayer = function () {
@@ -28,7 +32,7 @@ On the first line we are creating an (anonymous) function that writes `HI!` to t
 
 The `main` function takes a parameter `fn`, writes a few statements to the console (the type of the parameter for example... what is that?) and then calls the `fn`-parameter as a function by using `fn();`
 
-Finally we call the main function and passing it the `hiSayer` function as the `fn` parameter. Hence `hiSayer` will be called inside `main`. 
+Finally we call the main function and passing it the `hiSayer` function as the `fn` parameter. Hence `hiSayer` will be called inside `main`.
 
 ### Parameter passing
 
@@ -48,7 +52,7 @@ function main(nameToGreet, fn) {
 main('Marcus', hiSayer);
 ```
 
-Now we are passing a string `name` to the anonymous function. This string is actually a parameter to the `main`-method too, which means that we can decide (bind) the value of the string when we execute the program on the last line. 
+Now we are passing a string `name` to the anonymous function. This string is actually a parameter to the `main`-method too, which means that we can decide (bind) the value of the string when we execute the program on the last line.
 
 ### Shorter syntax
 
@@ -62,9 +66,9 @@ const main = (nameToGreet, fn) => fn(nameToGreet);
 main('Marcus', hiSayer);
 ```
 
-Oh! Much sweet! Much nice! 
+Oh! Much sweet! Much nice!
 
-This code is equivalent with the previous version, but shorter, and (objectively) easier to read. 
+This code is equivalent with the previous version, but shorter, and (objectively) easier to read.
 
 A few things to note:
 
@@ -84,12 +88,12 @@ const main = (nameToGreet, fn) => fn(nameToGreet);
 main('Marcus', name => console.log(`HI ${name}!`));
 ```
 
-This is pretty cool! Just as we did with that beautiful name parameter, we can decide (bind) the function just where we need it. 
+This is pretty cool! Just as we did with that beautiful name parameter, we can decide (bind) the function just where we need it.
 
-Check the definition of the`main`-function again: 
+Check the definition of the`main`-function again:
 
-* it takes a `nameToGreet` (bound to `Marcus` when we call it, on the last line) and 
-* the second parameter `fn` is a function. Bound to ```name => console.log(`HI ${name}!`)``` when we call it. 
+* it takes a `nameToGreet` (bound to `Marcus` when we call it, on the last line) and
+* the second parameter `fn` is a function. Bound to ```name => console.log(`HI ${name}!`)``` when we call it.
 
 ### More than one line
 
@@ -117,10 +121,12 @@ main('Marcus', function (name) {
 });
 ```
 
-See that `});` at the end there. It's there because the curly brace ends the definition of the function and the paranthesis ends the parameter list to the `main`-function. And then the semicolon which is there for our sins. 
+See that `});` at the end there. It's there because the curly brace ends the definition of the function and the paranthesis ends the parameter list to the `main`-function. And then the semicolon which is there for our sins.
 
 ### Summary
 
-Passing functions as parameters is a very powerful construct and can be abbreviated quite a lot. But that it's short and powerful also makes it a little bit harder to read. 
+Passing functions as parameters is a very powerful construct and can be abbreviated quite a lot. But that it's short and powerful also makes it a little bit harder to read.
 
-I hope that this post made it a bit clearer. 
+I hope that this post made it a bit clearer.
+
+Now you are well equipped to read the next part of this series - [calling back](https://saltsthlm.github.io/protips/callingBack).
