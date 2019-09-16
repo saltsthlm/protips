@@ -1,8 +1,10 @@
-# json-server 
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
+# json-server
 
 ## Nested Routes
 
-Say we have a database with `Products` and `Carts`. Now, say we want to add a `Products` as an `Item` to a cart by a POST request. 
+Say we have a database with `Products` and `Carts`. Now, say we want to add a `Products` as an `Item` to a cart by a POST request.
 You can achieve that with _custom routes_.
 
 ### Set the stage
@@ -80,7 +82,7 @@ You should get the new cart (including) and id in the response. If you examine y
 ```
 
 ### Custom routing
-Json-server is only setting up routes 1 level deep by default. But you can go around this limitation with some clever custom routing. 
+Json-server is only setting up routes 1 level deep by default. But you can go around this limitation with some clever custom routing.
 
 Create a new JSON file for your routes. Let's call it `routes.json`.
 ```json

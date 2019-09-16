@@ -1,4 +1,6 @@
-*Save your fingers* 
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
+# Switching langauge on the keyboard
 
 We are programmers. We type a lot. Let’s save our fingers and make the precious keystrokes we do count!
 

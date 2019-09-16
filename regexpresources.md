@@ -1,6 +1,8 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Regular expression resources
 
-Regular expressions are a bit hard to grok. But once you do it's like be given a light sabre: 
+Regular expressions are a bit hard to grok. But once you do it's like be given a light sabre:
 
 > This is the weapon of a Jedi Knight. Not as clumsy or as random as a blaster. An elegant weapon... for a more civilized age
 >

@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # LowDb and some application design
 
 When developing applications we sometimes need a quick little database to store small amounts of data in. For example when we are creating a prototype or first iterations of our application, or if the data will never be a lot like configuration data.

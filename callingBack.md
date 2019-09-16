@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 ## Callbacks part II - call me back, will ya?
 
 This blog post can also be [viewed as a screencast](https://youtu.be/VYA917W9IRs), if you rather hear it than read it.

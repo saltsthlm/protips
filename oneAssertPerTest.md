@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 The tests that we are writing becomes the documentation (or specification) for how our code should behave. Therefor it’s really important to write clear and easy to understand test.
 
 They are also much easier to manage if each test only tests one single thing.

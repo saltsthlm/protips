@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 *Save your fingers - lesson 2 - NPM*
 
 We are programmers. We type a lot. Let's save our fingers and make the precious keystrokes we do, count!

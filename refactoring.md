@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Refactoring
 
 A key programmer skill is to make our code easier to read and understand. In fact this more important than to make the code fast, terse and easy for the computer to interpret. Or easy to write.

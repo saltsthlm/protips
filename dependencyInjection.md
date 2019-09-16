@@ -1,6 +1,8 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Dependency Injection
 
-One pattern that we see again and again in our code is called Dependency injection. Although it sounds and looks a bit daunting at first, it's actually not that hard to understand and use. 
+One pattern that we see again and again in our code is called Dependency injection. Although it sounds and looks a bit daunting at first, it's actually not that hard to understand and use.
 
 ## Dependency
 
@@ -23,11 +25,11 @@ In order to calculate this saldo we:
 * then get the accounts for that user, using another function that takes a user id (`const accountsForUser = getAccounts(user.id);`)
 * With the list of accounts we need to do a very complicated (not really ... but let's pretend) set of calculations to get the sum
 
-The **real** business functionality is that last part, summarizing the balance on the accounts. However, in order to do this we depend on some other parts to supply us with the data for the calculation. The two functions are dependencies to us. 
+The **real** business functionality is that last part, summarizing the balance on the accounts. However, in order to do this we depend on some other parts to supply us with the data for the calculation. The two functions are dependencies to us.
 
 ## Injection
 
-Now, since I wrote the code to get the user and accounts I happen to know that it's very simple. In fact, we could have written it rigth in the `calculateSaldo` function if we wanted. Like this: 
+Now, since I wrote the code to get the user and accounts I happen to know that it's very simple. In fact, we could have written it rigth in the `calculateSaldo` function if we wanted. Like this:
 
 ```javascript
 function calculateSaldo(userName) {
@@ -42,14 +44,14 @@ function calculateSaldo(userName) {
 
 There are a couple of problems with this code:
 
-* First the function is now responsbile for many things 1)It knows how to get users, 2) It knows how to get accounts for user ids, 3) it does the calculation 
+* First the function is now responsbile for many things 1)It knows how to get users, 2) It knows how to get accounts for user ids, 3) it does the calculation
   We want functions to be responsible for one thing and one thing only - it's called the Single Responisiblity Prinicple
 * Secondly how we get things from the database is now hardcoded into the function that calculate saldo. We cannot call `calculateSaldo` without having it do exactly what it does now. That makes testing the `calculateSaldo` much harder.
-* Thirdly I cannot see the forrest for all the threes. In order to see the really (business) code I have to squint and see past the infrastructure code. 
+* Thirdly I cannot see the forrest for all the threes. In order to see the really (business) code I have to squint and see past the infrastructure code.
 
-For these, and probably more, reasons we can *inject* the dependencies / things that `calculateSaldo` needs, in order for `calculateSaldo` do it's job. 
+For these, and probably more, reasons we can *inject* the dependencies / things that `calculateSaldo` needs, in order for `calculateSaldo` do it's job.
 
-Hence we can inject two parameters, the two functions that `calculateSaldo` needs, into the function. Which brings us back to the first example, like this: 
+Hence we can inject two parameters, the two functions that `calculateSaldo` needs, into the function. Which brings us back to the first example, like this:
 
 ```javascript
 function calculateSaldo(userName, getUser, getAccounts) {
@@ -63,7 +65,7 @@ function calculateSaldo(userName, getUser, getAccounts) {
 
 ## Hey hey hey ... Jakob had some kind of this and what-have-you
 
-The example above is known as a function injection, where we inject the dependencies into a single function. A special, but common, way of that is what's known as constructor injection. 
+The example above is known as a function injection, where we inject the dependencies into a single function. A special, but common, way of that is what's known as constructor injection.
 
 Let's mimic, in part, what we had in the `PlayerService` by creating a `CalculatorService` class. It has a constructor like this:
 
@@ -84,13 +86,13 @@ Last part, in order to create this class we need to do `new CalculatorService`, 
 
 ```javascript
 module.exports.create =
-  (userGetter, accountGetter) => 
+  (userGetter, accountGetter) =>
 		new CalculatorService(userGetter, accountGetter);
 ```
 
 Notice the use of `new` that is passing the parameters to the create function into the constructor.
 
-Also notice that the `CalculatorService` knows (and cares) nothing about the dependencies we are passing to the constructor ... 
+Also notice that the `CalculatorService` knows (and cares) nothing about the dependencies we are passing to the constructor ...
 
 Almost. Here is how we are using it:
 
@@ -104,14 +106,14 @@ CalculatorService.prototype.calculateSaldo = function(userName) {
 }
 ```
 
-See how we are using `this.getUser` to get hold of the method we stored in the instance variable, in the constructor. 
+See how we are using `this.getUser` to get hold of the method we stored in the instance variable, in the constructor.
 
 So `CalculatorService` knows (and cares) nothing about the dependencies we are passing to the constructor... except that once we use it we:
 
 * expect `this.getUser` to take a username and return the user
 * expect the `this.getAccounts` to take a id parameter and return the accoutns for the user with that id.
 
-How this is accomplished and implemented the `CalculatorService` couldn't care less about. Separation of concerns in actions. 
+How this is accomplished and implemented the `CalculatorService` couldn't care less about. Separation of concerns in actions.
 
 
 
@@ -130,11 +132,11 @@ console.log(`Marcus has ${marcusSaldo}`);
 console.log(`Jakob has ${jakobSaldo}`);
 ```
 
-We use the `.create`-function on the `CalculatorService` and pass it the `getUserFromDb` and `getAccountsForUser` functions as dependencies for the class. 
+We use the `.create`-function on the `CalculatorService` and pass it the `getUserFromDb` and `getAccountsForUser` functions as dependencies for the class.
 
 When we call the `.calculateSaldo` function it will use the dependencies that is injected into the constructor.
 
-## Summary 
+## Summary
 
 I hope this made dependencies a bit more clear for you. I love to walk you through this if you want to.
 

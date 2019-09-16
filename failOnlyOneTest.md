@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 When more than one test is failing at the same time, try to get only one failing test.
 
 There are two main approaches to do so `only` and `skip`.

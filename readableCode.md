@@ -1,15 +1,17 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Crafting Readable Code
 
 ## Setting the stage
-Suppose we are developing a module in some system. 
+Suppose we are developing a module in some system.
 The module we are developing is using some service to fetch a collection of some sort.
-Then it refines the data according to some business rules. 
+Then it refines the data according to some business rules.
 Finally it is publishing this data as an event on some event stream.
-Exactly what these things are or how they are implemented is not important. 
+Exactly what these things are or how they are implemented is not important.
 Let's concentrate on how we write the code in our module.
 
 ## The first draft
-Of course we are developing this code using TDD practices. 
+Of course we are developing this code using TDD practices.
 Suppose we have implemented all the functionality we are supposed to do and all our tests are passing the test suite.
 The code now looks like this:
 
@@ -18,7 +20,7 @@ var service = require('./service');
 var emitter = require('./emitter');
 
 function publish() {
-  var collection = service.getAll(); 
+  var collection = service.getAll();
   var action = collection.action;
   var ids = [];
   collection.forEach(function (item) { // get the ids
@@ -38,7 +40,7 @@ module.exports.publish = publish;
 ```
 
 ### Are we done?
-No. No we are not done. This code has several problems. 
+No. No we are not done. This code has several problems.
 
 First of all, it is using vars all over. Well, that's easy to refactor, but this code has bigger problems than that.
 __It is not readable!__
@@ -52,7 +54,7 @@ const service = require('./service');
 const emitter = require('./emitter');
 
 function publish() {
-  const collection = service.getAll(); 
+  const collection = service.getAll();
   const action = collection.action;
 
   const ids = [];
@@ -61,9 +63,9 @@ function publish() {
 
     if (!item.role === 'admin' || !item.package === 'premium') {
 
-      ids.push('N/A'); 
+      ids.push('N/A');
 
-    } else { 
+    } else {
 
       ids.push(item.id);
     }
@@ -73,8 +75,8 @@ function publish() {
   emitter.publish(collection.location, {
     id: ids,
     action: action
-  }, function(err) { 
-    throw err; 
+  }, function(err) {
+    throw err;
   });
 }
 
@@ -98,12 +100,12 @@ const emitter = require('./emitter');
 
 function findIds(collection) {
   collection.map(item => {
-    
+
     if (!item.role === 'admin' || !item.package === 'premium') {
 
       return 'N/A';
 
-    } else { 
+    } else {
 
       return item.id;
     }
@@ -119,7 +121,7 @@ function errorHandler(err) {
 }
 
 function publish() {
-  const collection = service.getAll(); 
+  const collection = service.getAll();
   const action = collection.action;
   const ids = findIds(collection);
 
@@ -135,9 +137,9 @@ module.exports.publish = publish;
 ```
 
 ## Crafting good code
-But let's not stop there. There are still things we can improve. 
+But let's not stop there. There are still things we can improve.
 Take a look at the if statement. It is using two negative comparisons and an `OR` statement.
-That is a language construct that is often difficult to reason about. But the fix for that is easy. 
+That is a language construct that is often difficult to reason about. But the fix for that is easy.
 According to boolean algebra, this is equivalent to turning the negative comparisons to positive and using an `AND` statement.
 We will also break that out into a function so that it reads more like plain English.
 
@@ -151,12 +153,12 @@ function isAdminAndPremium(item) {
 
 function findIds(collection) {
   return collection.map(item => {
-    
+
     if (isAdminAndPremium(item)) {
 
       return item.id;
 
-    } else { 
+    } else {
 
       return 'N/A';
     }
@@ -172,7 +174,7 @@ function errorHandler(err) {
 }
 
 function publish() {
-  const collection = service.getAll(); 
+  const collection = service.getAll();
   const action = collection.action;
 
   const ids = findIds(collection);
@@ -188,7 +190,7 @@ function publish() {
 module.exports.publish = publish;
 ```
 
-Now look at this! This is well written code. It is both easy to read and easy to reason about. 
+Now look at this! This is well written code. It is both easy to read and easy to reason about.
 Also, there are no comments, that will rot and become completely misleading after a few iterations.
 
 ## Getting functional
@@ -200,7 +202,7 @@ Let's make it a little more functional!
 const service = require('./service');
 const emitter = require('./emitter');
 
-const isAdminAndPremium = item => 
+const isAdminAndPremium = item =>
   item.role === 'admin' && item.package === 'premium';
 
 const findIds = collection =>
@@ -214,7 +216,7 @@ const errorHandler = err => {
 }
 
 function publish() {
-  const collection = service.getAll(); 
+  const collection = service.getAll();
   const action = collection.action;
   const ids = findIds(collection);
 
@@ -231,5 +233,5 @@ module.exports.publish = publish;
 
 Look! Short and concise, yet readable.
 
-If this last step was an improvement or not is in the eye of the beholder. An experienced programmer would probably say yes. 
+If this last step was an improvement or not is in the eye of the beholder. An experienced programmer would probably say yes.
 However, it could be a little more alien to somebody who has just started out.

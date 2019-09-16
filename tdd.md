@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # TDD - Test driven development
 
 Test driven development means that we write code that test our code. Not only that but we write the test code before we write our (production) code.
@@ -63,19 +65,19 @@ describe('Adder feature', () => {
 * Notice that we are referencing the `adder.js` and `add` function - although that doesn't exists yet.
 * We are also stating WHAT the code should do very clearly; if 1 and 1 is sent to the `add` function - then 2 should be returned
 
-Let's run it: `npm t` . 
+Let's run it: `npm t` .
 
-Actually - before you do that - stop for awhile here and state what you *think* will happen. Done? Ok - go on. 
+Actually - before you do that - stop for awhile here and state what you *think* will happen. Done? Ok - go on.
 
 
 
-That fails, of course, since we have not yet created the function `add` in the `adder.js` file: 
+That fails, of course, since we have not yet created the function `add` in the `adder.js` file:
 
 ```bash
 TypeError: adder.add is not a function
 ```
 
-Exactly what we thought. Right? Did you notice that the error was reported in **RED**? We are in the **RED** state of the loop. 
+Exactly what we thought. Right? Did you notice that the error was reported in **RED**? We are in the **RED** state of the loop.
 
 Our only job now is to get to **GREEN**. We are not allowed to change any code when the tests are **RED**. Because then we don't know what we are breaking. If we are on **GREEN** and change code it will tell us if we are breaking anything (by going RED).
 
@@ -85,9 +87,9 @@ Ok - let's make that test pass with as little code as possible. Let's go to **GR
 module.exports.add = () => 2;
 ```
 
-That is the simplest I can come up with. But does it work? 
+That is the simplest I can come up with. But does it work?
 
-What do you think will happen when we run `npm t` . Have an idea? Ok - let's try it. Run `npm t` . 
+What do you think will happen when we run `npm t` . Have an idea? Ok - let's try it. Run `npm t` .
 
 Yes - it's passes. In **GREEN** it's now reported that the test pass:
 
@@ -106,7 +108,7 @@ But - that's not really the code we need, right? `add` will always return 2. We 
   });
 ```
 
-Now that we run the tests (think about what you think will happen and then`npm t`) we are on **RED** again: 
+Now that we run the tests (think about what you think will happen and then`npm t`) we are on **RED** again:
 
 ```bash
   ✓ Adder feature 1+1 = 2: 0ms
@@ -125,17 +127,17 @@ Now that we run the tests (think about what you think will happen and then`npm t
       +2
 ```
 
-One test is passing but one is failing. As we thought. 
+One test is passing but one is failing. As we thought.
 
-Let's get to **GREEN** as fast as possible. And the fastest way is to write a more proper implementation: 
+Let's get to **GREEN** as fast as possible. And the fastest way is to write a more proper implementation:
 
 ```javascript
 module.exports.add = (a, b) => a + b;
 ```
 
-`npm t` shows us that it works as intended. Now that we are on **GREEN** we can actually make the code a bit better. Let's **REFACTOR** before we call it a day. 
+`npm t` shows us that it works as intended. Now that we are on **GREEN** we can actually make the code a bit better. Let's **REFACTOR** before we call it a day.
 
-I don't like the parameter names `(a, b)` and I don't like that we are exporting the function right out like that. I'm gonna change it a bit, like this: 
+I don't like the parameter names `(a, b)` and I don't like that we are exporting the function right out like that. I'm gonna change it a bit, like this:
 
 ```javascript
 // These are the formal names https://math.stackexchange.com/questions/975541/what-are-the-formal-names-of-operands-and-results-for-basic-operations
@@ -146,7 +148,7 @@ module.exports = {
 }
 ```
 
-Cool - let's rerun with `npm t` and it WHAAT?! It fails with a glaring **RED** message: 
+Cool - let's rerun with `npm t` and it WHAAT?! It fails with a glaring **RED** message:
 
 ```bash
   1) Adder feature 1+1 = 2
@@ -168,7 +170,7 @@ Cool - let's rerun with `npm t` and it WHAAT?! It fails with a glaring **RED** m
       at processImmediate (internal/timers.js:439:21)
 ```
 
-Ah, stupid fingers. Spelling misstake in the exports. Luckily the tests showed me that I messed up. 
+Ah, stupid fingers. Spelling misstake in the exports. Luckily the tests showed me that I messed up.
 
 ```javascript
 // These are the formal names
@@ -186,8 +188,8 @@ The [code is found here](https://github.com/saltsthlm/protips-code/tree/master/t
 
 ## Conclusion
 
-Test driven development helps us to write our code in small, controlled and deliberate steps. 
+Test driven development helps us to write our code in small, controlled and deliberate steps.
 
-When doing TDD we write the test before we write the production code. 
+When doing TDD we write the test before we write the production code.
 
-By using TDD we get better code that is easier to understand, and documentation and that will tell us if we break the code already written. 
+By using TDD we get better code that is easier to understand, and documentation and that will tell us if we break the code already written.

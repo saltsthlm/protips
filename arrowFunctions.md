@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 ## Arrow functions
 
 With ES6 (EcmaScript 6) there's a new way to declare functions. It can, at first, be a little bit tricky to wrap your head around. But once you get used to it, they provide a much tighter way to declare functions.

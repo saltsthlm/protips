@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Getting started mob programming
 
 [Mob programming](https://en.wikipedia.org/wiki/Mob_programming) is a very simple idea that have huge impact on how we learn, the quailty of our code and how fast we complete work.

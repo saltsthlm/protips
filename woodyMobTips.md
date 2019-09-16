@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Tips from Woody
 
 I hope you all enjoyed having Woody here this morning. It was a real treat showing him around the mobs and see him interact with y'all.

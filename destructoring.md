@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Destructuring
 
 From ECMAScript 6 (ES6) we have a new powerful tool to our disposal **Destructuring**. It reminds me a little bit about a Jedi lightsaber as it's very simple but powerful, elegant almost. And potentially hurt you a lot if used the wrong way :)

@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Copy and pasting in the terminal
 
 A very short, but super-handy tip, came to mind today.
@@ -16,7 +18,7 @@ pbpaste > index.html
 
 This will create a file called `index.html` and put whatever you have on your clipboard (Command+C'ed) in that file. Easy, fast, fun.
 
-Please note that, in true bash way, no questions will be asked. Whatever `index.html` contained before you ran this command is now gone. No undo to be done. 
+Please note that, in true bash way, no questions will be asked. Whatever `index.html` contained before you ran this command is now gone. No undo to be done.
 
 ## Copying stuff from a file
 You might have the opposite situation where you have created amazing code, as I have not right now, and want to share it to the world.
@@ -27,9 +29,9 @@ You can get stuff into your clipboard, without opening the file, selecting the c
 pbcopy < index.html
 ```
 
-Done! 
+Done!
 
-The content of `index.html` is now on your clipboard to be pasted in that blog post you were writing. 
+The content of `index.html` is now on your clipboard to be pasted in that blog post you were writing.
 
 ## Bonus - create an empty file
 
@@ -39,4 +41,4 @@ Another thing that is suprisingly handy is to just create an empty file. This is
 touch index.html
 ```
 
-A good thing with `touch` is that it will create the file if it doesn't exists, but not overwrite it with an empty file if it **does** exists. 
+A good thing with `touch` is that it will create the file if it doesn't exists, but not overwrite it with an empty file if it **does** exists.

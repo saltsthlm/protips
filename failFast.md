@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 Writing code in JavaScript often contains a lot of checking that things are defined, present or containing the data we are looking for. This can lead to very complicated expressions that are hard to read.
 
 But there's a better way; it's called defensive coding or *fail fast*.
@@ -12,13 +14,13 @@ We even have a few tests for this:
 it('should reject undefined cookie', () => {
     assert(!svc.isValidCookie(undefined));
 });
-it('should reject empty string cookie', () => {    
+it('should reject empty string cookie', () => {
     assert(!svc.isValidCookie(''));
 });
-it('should reject cookie without auth.status key', () => {    
+it('should reject cookie without auth.status key', () => {
     assert(!svc.isValidCookie('foo=bar'));
 });
-it('should accept cookie with auth.status key', () => {    
+it('should accept cookie with auth.status key', () => {
     assert(svc.isValidCookie('foo=bar;auth.status=apa'));
 });
 ```

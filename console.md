@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Console can do more than just .log
 Using the `console.log` is the goto way to debug your code, that most of us has used many many times.
 

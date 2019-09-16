@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 JavaScript is a functional language. It means that functions are at the core of what we program. We can see that in the case of [callbacks](callingBack.md), where we pass functions as parameters.
 
 ```javascript

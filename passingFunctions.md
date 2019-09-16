@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Callbacks part I - functions as parameters
 
 This blog post can also be [viewed as a screencast](https://youtu.be/rhD6_jdZkK8), if you rather hear it than read it.

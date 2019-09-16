@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 When I first heard about promises I got pretty confused and actually had a period where I rather did callbacks than Promises.
 
 But then I got to know how to make my own promise and it all made a whole lot of sense.

@@ -1,4 +1,6 @@
-We got some more input from students (Przemek) on tips and tricks for Visual Studio Code, that we wanted to share.
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
+We got some more input from students (Przemek - class of Winter19) on tips and tricks for Visual Studio Code, that we wanted to share.
 
 ## Intellisense and emmet
 

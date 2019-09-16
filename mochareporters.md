@@ -1,6 +1,8 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 I’ve been tipping a few mobs of this thing, but I wanted to document it here as well.
 
-When we are doing such rapid code-test-code-test-code-loops it can be come very cumbersome to 
+When we are doing such rapid code-test-code-test-code-loops it can be come very cumbersome to
 
 1. have many failing tests (psst `.skip` them - see above) and
 2. to scroll past all the long output that our passing tests are producing.

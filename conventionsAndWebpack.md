@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Convention over configuration … and a word about WebPack
 
 As developers we are, nowadays, using a lot of frameworks and tool to build our applications. Developing has more and more become stitching together applications rather than writing the basic functionality from scratch.

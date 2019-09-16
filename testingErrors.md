@@ -1,4 +1,6 @@
-When we are writing testing code we sometimes need to test that our code is handling errors in a correct way - test the error handling in other words. 
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
+When we are writing testing code we sometimes need to test that our code is handling errors in a correct way - test the error handling in other words.
 
 Imagine that you have the following simple function in a `index.js`-file
 
@@ -39,14 +41,14 @@ describe('how to test that somethings throws', () => {
 1. Create a new empty directory ('mkdir testingErrors && cd testingErrors')
 2. `npm init -y` to create a `package.json`
 3. `npm install mocha -D` to install and save Mocha, that is our test runner
-4. Update package.json script `test` to this `mocha --watch *.js -R list` 
+4. Update package.json script `test` to this `mocha --watch *.js -R list`
 5. `npm test` to run the tests
 
 ## Testing errors
 
-Ok that is fine, but that code is a bit instabile. What if someone sends us less than 0... That is obviously (joking here, but play along) wrong and should throw an error telling the user that. 
+Ok that is fine, but that code is a bit instabile. What if someone sends us less than 0... That is obviously (joking here, but play along) wrong and should throw an error telling the user that.
 
-I want the code to be like this: 
+I want the code to be like this:
 
 ```javascript
 const checkIt = (value) => {
@@ -83,13 +85,13 @@ Let's walk through the code:
   * A callback function that it will execute to get the exception
   * The second parameter is the expected Error
 * In the callback we call the `checkIt` function as before, with a parameter that creates the error
-* The second parameter `{ name: 'Error', message: 'Cannot be below 0'}` describes the errors type and message. 
+* The second parameter `{ name: 'Error', message: 'Cannot be below 0'}` describes the errors type and message.
 
 When we run this Mocha will expect an error to thrown, by the callback function and will pass if the error is a `Error` with the message  `Cannot be below 0`
 
 ### Another one
 
-Let's do one more. Let's say that we want to check that the sent in value is a number and not a stupid string, since we are going to check if it is greater than one. 
+Let's do one more. Let's say that we want to check that the sent in value is a number and not a stupid string, since we are going to check if it is greater than one.
 
 ```javascript
 const checkIt = (value) => {
@@ -125,9 +127,9 @@ it('does throw a TypeError if the value is not a number', (done) => {
 
 The only difference here is that I set up the expected error, as a separate value before I call the `assert.throws`
 
-## But how do I check that it doesn't throw? 
+## But how do I check that it doesn't throw?
 
-Well there's actually a function for that too, in the standard `assert` library. 
+Well there's actually a function for that too, in the standard `assert` library.
 
 ```javascript
 it('not throw an error if the value is above 1', (done) => {
@@ -220,4 +222,4 @@ describe('how to test that somethings throws', () => {
 
 ## Conclusion
 
-I hope that this made testing for errors a bit simpler to grasp. 
+I hope that this made testing for errors a bit simpler to grasp.

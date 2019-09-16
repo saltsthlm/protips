@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Object oriented vs functional oriented programming
 
 Programming languages come in many different flavors, just as human languages. Each language gives you different opportunities and possibilities to express a solution to a problem. Again just as human languages - let's examine that a bit deeper.

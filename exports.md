@@ -1,3 +1,5 @@
+**This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
+
 # Export and import modules in ES6
 
 In ECMAScript 6 there's a couple of new ways of importing and exporting modules that might look a bit different and unusual at first. It's really very simple once you get your eyes used to it.
