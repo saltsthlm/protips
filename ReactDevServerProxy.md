@@ -1,6 +1,6 @@
 **This site is deprecated and all the content has moved to [AppliedTechnology](https://appliedtechnology.github.io/protips/)**
 
-# Using the proxy setting for React dev server
+# Using the proxy setting for React dev server hi
 
 When we use `create-react-app` we get a very powerful development experience set up for us. Amongst other things a development server. This has a setting, in the `package.json` that is called `proxy`.
 
